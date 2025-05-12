@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "TabRemaped",
+  "version": "1.0.0",
+  "description": "Remaps the Tab key on useful links only",
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/search*",
+        "https://www.google.co.in/search*"
+      ],
+      "js": ["scripts/content.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "power-tab@myextension.com"
+    }
+  }
+}
+
