@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "TabRemaped",
-  "version": "1.0.0",
-  "description": "Remaps the Tab key on useful links only",
+  "name": "Tab Remaped",
+  "version": "2.0.0",
+  "description": "Remaps the Tab key on useful links",
   "action": {
     "default_icon": {
       "16": "icons/icon16.png",
@@ -11,18 +11,13 @@
     }
   },
   "content_scripts": [
-    {
-      "matches": [
-        "https://www.google.com/search*",
-        "https://www.google.co.in/search*"
-      ],
-      "js": ["scripts/content.js"]
-    }
-  ],
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "power-tab@myextension.com"
-    }
+  {
+    "matches": ["https://www.google.com/search*"],
+    "js": ["scripts/content-google.js"]
+  },
+  {
+    "matches": ["https://www.youtube.com/*"],
+    "js": ["scripts/content-youtube.js"]
   }
+]
 }
-
