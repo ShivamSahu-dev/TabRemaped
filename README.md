@@ -73,8 +73,9 @@ Here's a breakdown of the files in this extension:
 This extension is designed to work with:
 
 * Google Chrome
-* Chromium-based browsers (e.g., Microsoft Edge, Brave)
+* Chromium-based browsers (e.g., Microsoft Edge)
 * Mozilla Firefox (See `browser_specific_settings` in `manifest.json`)
+* Doesnt work with brave browser --> as it uses `shadow DOM`
 
 ## Content Script Details
 
